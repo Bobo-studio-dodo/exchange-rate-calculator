@@ -9,10 +9,19 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 50px;
-			background-image: url('b9dc5864d799f1a0558a2c5de4f2f9c3.png'); /* 確保圖片在正確的路徑 */
+			background-image: url('01_LOGO有色無出血.png'); /* 確保圖片在正確的路徑 */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+			background-attachment: fixed;/* 讓背景不會隨滾動變動 */
+        }
+		
+		/* 針對小螢幕（手機）調整 */
+        @media (max-width: 768px) {
+		    body {
+            background-size: contain; /* 讓手機上完整顯示背景圖 */
+            background-attachment: scroll; /* 允許滾動時背景變動 */
+            }
         }
         .container {
             background: white;
